@@ -16,7 +16,7 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from openerp.osv import osv, fields
+from openerp.osv import osv
 from openerp.tools.safe_eval import safe_eval
 
 
@@ -24,10 +24,10 @@ class base_language_install_scheduler(osv.osv):
     _name = "base.language.install.scheduler"
     _description = "Install Language by Scheduler"
 
-
     def lang_install_scheduler(self, cr, uid, ids=[], context=None):
         icp = self.pool.get('ir.config_parameter')
-        lang = safe_eval(icp.get_param(cr, uid, 'base_language_install.default_lang', 'False')),
+        lang = safe_eval(icp.get_param(
+            cr, uid, 'base_language_install.default_lang', 'False')),
         if lang:
             modobj = self.pool.get('ir.module.module')
             mids = modobj.search(cr, uid, [('state', '=', 'installed')])

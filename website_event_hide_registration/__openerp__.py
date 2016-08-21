@@ -23,8 +23,10 @@
     'category': 'Website',
     'description': """
 * Adds a boolean field 'Show Registration' in event model.
-* Show/hide registration section in the event screen on website depending on 'Show Registration' field value.
-* Note: this module does not work with `event_sale` (intalling `event_sale` will negate the function of this module).
+* Show/hide registration section in the event screen on website depending on
+'Show Registration' field value.
+* Note: this module does not work with `event_sale` (intalling `event_sale`
+will negate the function of this module).
     """,
     'author': 'Rooms For (Hong Kong) Limited T/A OSCG',
     'website': 'https://www.odoo-asia.com',

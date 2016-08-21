@@ -18,12 +18,12 @@
 {
     'name': 'Website CRM Notification',
     'category': 'Website',
-    'version': '9.0.1.0.0',
+    'version': '9.0.1.0.1',
     'author': 'Rooms For (Hong Kong) Limited T/A OSCG',
     'website': 'https://www.odoo-asia.com/',
     'licence': 'AGPL-3',
     'depends': ['website_crm'],
-    'summary':"""Send notification and remainder when submit contact form""",
+    'summary': """Send notification and remainder when submit contact form""",
     'description': """
 Send notification and remainder when submit contact form
     """,

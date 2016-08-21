@@ -36,10 +36,13 @@ class base_config_settings(osv.TransientModel):
     def get_default_lang(self, cr, uid, ids, context=None):
         icp = self.pool.get('ir.config_parameter')
         return {
-            'default_lang': safe_eval(icp.get_param(cr, uid, 'base_language_install.default_lang', 'False')),
+            'default_lang': safe_eval(icp.get_param(
+                cr, uid, 'base_language_install.default_lang', 'False')),
         }
 
     def set_default_lang(self, cr, uid, ids, context=None):
         config = self.browse(cr, uid, ids[0], context=context)
         icp = self.pool.get('ir.config_parameter')
-        icp.set_param(cr, uid, 'base_language_install.default_lang', repr(config.default_lang))
+        icp.set_param(
+            cr, uid, 'base_language_install.default_lang',
+            repr(config.default_lang))

@@ -19,7 +19,7 @@
 {
     'name': 'Language Install Scheduler',
     'summary': '',
-    'version': '9.0.0.7.0',
+    'version': '9.0.0.7.1',
     'category': 'Extra Tools',
     'description': """
 * Installs and overrides translation by scheduler.
