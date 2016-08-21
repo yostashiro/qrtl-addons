@@ -19,17 +19,18 @@
 {
     'name': 'Language Install Scheduler',
     'summary': '',
-    'version': '9.0.0.6.0',
+    'version': '9.0.0.7.0',
     'category': 'Extra Tools',
     'description': """
 * Installs and overrides translation by scheduler.
-* This module is intended to be used in a demo environment whose codebase \
+* This module is intended to be used in a demo environment whose codebase
 gets updated periodically (you want to show the latest translation).
     """,
     'author': 'Rooms For (Hong Kong) Limited T/A OSCG',
     'license': 'AGPL-3',
     'depends': ["base_setup"],
     'data': [
+        'security/ir.model.access.csv',
         'views/res_config_view.xml',
         'data/base_language_install_data.xml',
     ],
